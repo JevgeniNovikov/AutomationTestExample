@@ -19,6 +19,7 @@ public class TestOneAShop {
         tootekategooriaSection.tootekategooriaNumberOfElements(3);
         tootekategooriaSection.tootekategooriaElementsCountCheck("8","5","3");
         tootekategooriaSection.tootekategooriaElementChoice(2);
+        $("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll").click();
         SortBy sortBy = new SortBy();
 
         sortBy.openSortItemBy();

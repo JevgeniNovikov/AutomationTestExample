@@ -22,9 +22,6 @@ public class TootekategooriaSection {
     }
 
     public void tootekategooriaElementsCountCheck (String count1,String count2,String count3){
-//        countOfElements.get(0).shouldHave(text(count1));
-//        countOfElements.get(1).shouldHave(text(count2));
-//        countOfElements.get(2).shouldHave(text(count3));
 
         countOfElements.get(0).shouldHave(text(count1));
         countOfElements.get(1).shouldHave(text(count2));
