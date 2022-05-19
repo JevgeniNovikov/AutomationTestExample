@@ -17,7 +17,7 @@ public class TestOneAShop {
 
         tootekategooriaSection.tootekategooriaHeading("Tootekategooria");
         tootekategooriaSection.tootekategooriaNumberOfElements(3);
-        tootekategooriaSection.tootekategooriaElementsCountCheck("8","5","3");
+        tootekategooriaSection.tootekategooriaElementsCheck("Loomatarbed","Koertele","Kassidele");
         tootekategooriaSection.tootekategooriaElementChoice(2);
         $("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll").click();
         SortBy sortBy = new SortBy();

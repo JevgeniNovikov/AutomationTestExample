@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$$;
 public class TootekategooriaSection {
     public SelenideElement headingName =$("div.sn-categories");
     public ElementsCollection kategooriaElement =$$("a.ks-filter-link.sn-filter-link");
-    public ElementsCollection countOfElements =$$("span.sn-categories-itemCount");
 
     public void tootekategooriaHeading (String text){
         headingName.shouldHave(text(text));
@@ -21,11 +20,10 @@ public class TootekategooriaSection {
         kategooriaElement.shouldHave(size(count));
     }
 
-    public void tootekategooriaElementsCountCheck (String count1,String count2,String count3){
-
-        countOfElements.get(0).shouldHave(text(count1));
-        countOfElements.get(1).shouldHave(text(count2));
-        countOfElements.get(2).shouldHave(text(count3));
+    public void tootekategooriaElementsCheck(String text1, String text2, String text3){
+        kategooriaElement.get(0).shouldHave(text(text1));
+        kategooriaElement.get(1).shouldHave(text(text2));
+        kategooriaElement.get(2).shouldHave(text(text3));
     }
 
     public void tootekategooriaElementChoice (int elementNumber) {

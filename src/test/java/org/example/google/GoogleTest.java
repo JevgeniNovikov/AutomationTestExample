@@ -32,8 +32,8 @@ public class GoogleTest {
         $("[href='/quick-start.html']").shouldHave(text("Quick start")).click();
         $("h3#do-you-want-to-see-a-working-example").shouldBe(visible);
         $("[href='https://github.com/selenide-examples/google/blob/master/test/org/selenide/examples/google/selenide_page_object/GoogleTest.java']").click();
-        if($(".js-pjax-capture-input").shouldHave(text("Go to file")).isDisplayed()){
-            $(".js-pjax-capture-input").shouldHave(text("Go to file")).click();
+        if($("a[data-view-component='true'][href='/selenide-examples/google/find/master']").isDisplayed()){
+            $("a[data-view-component='true'][href='/selenide-examples/google/find/master']").click();
         }
         $("input.header-search-input").shouldBe(visible);
         $("input.header-search-input").click();
